@@ -274,36 +274,47 @@ def fit(source, box):
     return x + (w - sw * scale) / 2, y + (h - sh * scale) / 2, sw * scale, sh * scale
 
 
+def placed(path, prefix, source, box, crop=None):
+    """The part of an SVG file inside source, an (x, y, width, height) rectangle in its own units, scaled into box
+    on the card and clipped to it, as plain groups rather than <symbol> and <use>, which some renderers (Apple's
+    CoreSVG, for one) don't scale or clip."""
+    sx, sy, sw, sh = source
+    x, y, w, h = box
+    scale = min(w / sw, h / sh)
+    clip = (f'<clipPath id="{prefix}-clip"><rect x="{x:.2f}" y="{y:.2f}" width="{w:.2f}" height="{h:.2f}"/></clipPath>')
+    return clip, (f'<g clip-path="url(#{prefix}-clip)"><g transform="matrix({scale:.5f},0,0,{scale:.5f},'
+                  f'{x - sx * scale:.3f},{y - sy * scale:.3f})">{inline(path, prefix, crop)}</g></g>')
+
+
 def card(rank, suit, font, deck):
     color = RED if suit in ('diamonds', 'hearts') else BLACK
     face = rank in ('jack', 'queen', 'king')
     pip = PIP_SOURCE[suit]
-    defs = [f'<symbol id="pip" viewBox="{pip[0]} {pip[1]} {pip[2]} {pip[3]}">'
-            f'{inline(os.path.join(deck, f"2_of_{suit}.svg"), "pip")}</symbol>']
+    pip_file = os.path.join(deck, f'2_of_{suit}.svg')
     label, label_bottom, squeeze = font.path(LABEL.get(rank, rank), RANK_LEFT, RANK_TOP, RANK_CAP, RANK_MAX_W, RANK_GAP)
     # A squeezed rank's upright strokes come out thinner, so an outline of the same colour makes up the difference
     # (up to a point: a heavy font's thin strokes would thicken too much)
     lost = min(font.stem(RANK_CAP) * (1 - squeeze), MAX_OUTLINE)
     outline = f' stroke="{color}" stroke-width="{lost:.2f}" stroke-linejoin="round"' if lost > 0.01 else ''
+    defs = []
     parts = [f'<rect width="{CARD_W}" height="{CARD_H}" rx="{CORNER_RADIUS}" fill="#fff"/>',
              f'<path fill="{color}"{outline} d="{label}"/>']
-    x, y, w, h = fit(pip, SUIT_BOX)
-    parts.append(f'<use xlink:href="#pip" x="{x:.2f}" y="{y:.2f}" width="{w:.2f}" height="{h:.2f}"/>')
+    clip, suit_mark = placed(pip_file, 'suit', pip, fit(pip, SUIT_BOX))
+    defs.append(clip)
+    parts.append(suit_mark)
     if face:
         ax, ay, aw = ART_SOURCE
         bx, by, bw, bh = ART_BOX
         top = max(by, label_bottom + ART_GAP)
         by, bh = top, bh - (top - by)
         ah = aw * bh / bw
-        crop = (ax, ay, ax + aw, ay + ah)
-        defs.append(f'<symbol id="art" viewBox="{ax} {ay} {aw} {ah:.2f}">'
-                    f'{inline(os.path.join(deck, f"{rank}_of_{suit}.svg"), "art", crop)}</symbol>')
-        # The card's rounded corner trims the art where it runs off the bottom
-        defs.append(f'<clipPath id="card"><rect width="{CARD_W}" height="{CARD_H}" rx="{CORNER_RADIUS}"/></clipPath>')
-        parts.append(f'<use xlink:href="#art" x="{bx}" y="{by:.2f}" width="{bw}" height="{bh:.2f}" clip-path="url(#card)"/>')
+        # The art box stays inside the card's rounded corners, so clipping to it is enough
+        clip, art = placed(os.path.join(deck, f'{rank}_of_{suit}.svg'), 'art', (ax, ay, aw, ah), (bx, by, bw, bh),
+                           crop=(ax, ay, ax + aw, ay + ah))
     else:
-        x, y, w, h = fit(pip, PIP_BOX)
-        parts.append(f'<use xlink:href="#pip" x="{x:.2f}" y="{y:.2f}" width="{w:.2f}" height="{h:.2f}"/>')
+        clip, art = placed(pip_file, 'pip', pip, fit(pip, PIP_BOX))
+    defs.append(clip)
+    parts.append(art)
     return ('<?xml version="1.0" encoding="UTF-8" standalone="no"?>\n'
             '<!-- Small-size card from https://github.com/seeligd/svg-playing-cards, '
             'based on http://code.google.com/p/vector-playing-cards/ -->\n'

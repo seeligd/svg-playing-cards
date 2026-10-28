@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Small-size card from https://github.com/seeligd/svg-playing-cards, based on http://code.google.com/p/vector-playing-cards/ -->
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="167.0869141pt" height="242.6669922pt" viewBox="0 0 167.0869141 242.6669922">
-<defs><symbol id="pip" viewBox="61.5 33.4 44.5 46.8"><defs
-   id="pip-defs41"><radialGradient
+<defs><clipPath id="suit-clip"><rect x="92.00" y="14.19" width="70.00" height="73.62"/></clipPath><clipPath id="art-clip"><rect x="9.00" y="104.00" width="149.00" height="134.00"/></clipPath></defs>
+<rect width="167.0869141" height="242.6669922" rx="10" fill="#fff"/>
+<path fill="#df0000" d="M26.142857142857142 10.0H63.28571428571428V12.171428571428578H57.0V61.542857142857144Q57.0 76.97142857142858 50.028571428571425 84.0Q43.05714285714285 91.02857142857142 29.114285714285714 91.02857142857142Q19.857142857142854 91.02857142857142 14.428571428571427 87.4857142857143Q9.0 83.94285714285715 9.0 77.54285714285714Q9.0 72.62857142857143 11.742857142857144 69.82857142857142Q14.485714285714286 67.02857142857142 19.228571428571428 67.02857142857142Q23.97142857142857 67.02857142857142 26.314285714285713 69.42857142857142Q28.657142857142855 71.82857142857142 28.657142857142855 75.19999999999999Q28.657142857142855 78.57142857142857 27.4 82.0H22.942857142857143Q21.91428571428571 83.71428571428571 21.91428571428571 85.25714285714285Q21.91428571428571 86.8 23.457142857142856 87.88571428571429Q25.0 88.97142857142858 27.514285714285712 88.97142857142858Q32.08571428571429 88.97142857142858 33.4 85.37142857142857Q34.71428571428571 81.77142857142857 34.71428571428571 69.77142857142857V12.171428571428578H26.142857142857142Z"/>
+<g clip-path="url(#suit-clip)"><g transform="matrix(1.57303,0,0,1.57303,-4.742,-38.348)"><defs
+   id="suit-defs41"><radialGradient
     
-     xlink:href="#pip-linearGradient3773"
-     id="pip-radialGradient3781"
+     xlink:href="#suit-linearGradient3773"
+     id="suit-radialGradient3781"
      cx="-0.15782039"
      cy="-8.8345356"
      fx="-0.15782039"
@@ -13,16 +16,16 @@
      r="7.9997029"
      gradientTransform="matrix(-1.5842693,-0.02349808,0.03071979,-2.4775745,-0.24856378,-26.713507)"
      gradientUnits="userSpaceOnUse" /><linearGradient
-     id="pip-linearGradient3773"><stop
+     id="suit-linearGradient3773"><stop
        style="stop-color:#000000;stop-opacity:1;"
        offset="0"
-       id="pip-stop3775" /><stop
+       id="suit-stop3775" /><stop
        style="stop-color:#000000;stop-opacity:0.64885497;"
        offset="1"
-       id="pip-stop3777" /></linearGradient><radialGradient
+       id="suit-stop3777" /></linearGradient><radialGradient
     
-     xlink:href="#pip-linearGradient3773"
-     id="pip-radialGradient3957"
+     xlink:href="#suit-linearGradient3773"
+     id="suit-radialGradient3957"
      cx="-0.15782039"
      cy="-8.8345356"
      fx="-0.15782039"
@@ -30,13 +33,13 @@
      r="7.9997029"
      gradientTransform="matrix(-1.5842693,-0.02349808,0.03071979,-2.4775745,-0.24856378,-26.713507)"
      gradientUnits="userSpaceOnUse" /><linearGradient
-     id="pip-linearGradient3959"><stop
+     id="suit-linearGradient3959"><stop
        style="stop-color:#000000;stop-opacity:1;"
        offset="0"
-       id="pip-stop3961" /><stop
+       id="suit-stop3961" /><stop
        style="stop-color:#000000;stop-opacity:0.64885497;"
        offset="1"
-       id="pip-stop3963" /></linearGradient><radialGradient
+       id="suit-stop3963" /></linearGradient><radialGradient
      r="81.902771"
      fy="509.47577"
      fx="168.02475"
@@ -44,19 +47,19 @@
      cx="168.02475"
      gradientTransform="matrix(1.2565605,-0.77740644,0.33663816,0.5361257,-221.20213,359.24256)"
      gradientUnits="userSpaceOnUse"
-     id="pip-radialGradient3975"
-     xlink:href="#pip-linearGradient3784-4"
+     id="suit-radialGradient3975"
+     xlink:href="#suit-linearGradient3784-4"
      /><linearGradient
-     id="pip-linearGradient3784-4"><stop
+     id="suit-linearGradient3784-4"><stop
        style="stop-color:#ffffff;stop-opacity:0.4351145;"
        offset="0"
-       id="pip-stop3786-8" /><stop
+       id="suit-stop3786-8" /><stop
        style="stop-color:#000000;stop-opacity:0;"
        offset="1"
-       id="pip-stop3788-6" /></linearGradient><radialGradient
+       id="suit-stop3788-6" /></linearGradient><radialGradient
     
-     xlink:href="#pip-linearGradient3784-4-5"
-     id="pip-radialGradient3929"
+     xlink:href="#suit-linearGradient3784-4-5"
+     id="suit-radialGradient3929"
      gradientUnits="userSpaceOnUse"
      gradientTransform="matrix(1.2565605,-0.77740644,0.33663816,0.5361257,-221.20213,359.24256)"
      cx="168.02475"
@@ -64,16 +67,16 @@
      fx="168.02475"
      fy="509.47577"
      r="81.902771" /><linearGradient
-     id="pip-linearGradient3784-4-5"><stop
+     id="suit-linearGradient3784-4-5"><stop
        style="stop-color:#ffffff;stop-opacity:0.48854962;"
        offset="0"
-       id="pip-stop3786-8-0" /><stop
+       id="suit-stop3786-8-0" /><stop
        style="stop-color:#000000;stop-opacity:0;"
        offset="1"
-       id="pip-stop3788-6-3" /></linearGradient><radialGradient
+       id="suit-stop3788-6-3" /></linearGradient><radialGradient
     
-     xlink:href="#pip-linearGradient3784-4-1"
-     id="pip-radialGradient3927"
+     xlink:href="#suit-linearGradient3784-4-1"
+     id="suit-radialGradient3927"
      gradientUnits="userSpaceOnUse"
      gradientTransform="matrix(1.2565605,-0.77740644,0.33663816,0.5361257,-221.20213,359.24256)"
      cx="168.02475"
@@ -81,16 +84,16 @@
      fx="168.02475"
      fy="509.47577"
      r="81.902771" /><linearGradient
-     id="pip-linearGradient3784-4-1"><stop
+     id="suit-linearGradient3784-4-1"><stop
        style="stop-color:#ffffff;stop-opacity:0.23664123;"
        offset="0"
-       id="pip-stop3786-8-03" /><stop
+       id="suit-stop3786-8-03" /><stop
        style="stop-color:#000000;stop-opacity:0;"
        offset="1"
-       id="pip-stop3788-6-6" /></linearGradient><radialGradient
+       id="suit-stop3788-6-6" /></linearGradient><radialGradient
     
-     xlink:href="#pip-linearGradient3768"
-     id="pip-radialGradient3776"
+     xlink:href="#suit-linearGradient3768"
+     id="suit-radialGradient3776"
      cx="-0.20602037"
      cy="-4.5786963"
      fx="-0.20602037"
@@ -98,13 +101,13 @@
      r="8"
      gradientTransform="matrix(-1,0,0,-1.7201755,-0.41204074,-13.027194)"
      gradientUnits="userSpaceOnUse" /><linearGradient
-     id="pip-linearGradient3768"><stop
+     id="suit-linearGradient3768"><stop
        style="stop-color:#df0000;stop-opacity:1;"
        offset="0"
-       id="pip-stop3770" /><stop
+       id="suit-stop3770" /><stop
        style="stop-color:#df0000;stop-opacity:0.67175573;"
        offset="1"
-       id="pip-stop3772" /></linearGradient><radialGradient
+       id="suit-stop3772" /></linearGradient><radialGradient
      r="81.902771"
      fy="511.22299"
      fx="171.48665"
@@ -112,16 +115,16 @@
      cx="171.48665"
      gradientTransform="matrix(1.1529891,-0.67391547,0.39482025,0.67549043,-233.63262,270.40076)"
      gradientUnits="userSpaceOnUse"
-     id="pip-radialGradient4013"
-     xlink:href="#pip-linearGradient3784-4-6"
+     id="suit-radialGradient4013"
+     xlink:href="#suit-linearGradient3784-4-6"
      /><linearGradient
-     id="pip-linearGradient3784-4-6"><stop
+     id="suit-linearGradient3784-4-6"><stop
        style="stop-color:#ffffff;stop-opacity:0.31297711;"
        offset="0"
-       id="pip-stop3786-8-8" /><stop
+       id="suit-stop3786-8-8" /><stop
        style="stop-color:#000000;stop-opacity:0;"
        offset="1"
-       id="pip-stop3788-6-8" /></linearGradient><radialGradient
+       id="suit-stop3788-6-8" /></linearGradient><radialGradient
      r="81.902771"
      fy="492.63205"
      fx="159.35434"
@@ -129,16 +132,16 @@
      cx="159.35434"
      gradientTransform="matrix(1.0894779,-0.71513803,0.44645273,0.65626582,-244.93331,290.9185)"
      gradientUnits="userSpaceOnUse"
-     id="pip-radialGradient4013-8"
-     xlink:href="#pip-linearGradient3784-4-2"
+     id="suit-radialGradient4013-8"
+     xlink:href="#suit-linearGradient3784-4-2"
      /><linearGradient
-     id="pip-linearGradient3784-4-2"><stop
+     id="suit-linearGradient3784-4-2"><stop
        style="stop-color:#ffffff;stop-opacity:0.29007635;"
        offset="0"
-       id="pip-stop3786-8-1" /><stop
+       id="suit-stop3786-8-1" /><stop
        style="stop-color:#000000;stop-opacity:0;"
        offset="1"
-       id="pip-stop3788-6-5" /></linearGradient><radialGradient
+       id="suit-stop3788-6-5" /></linearGradient><radialGradient
      r="81.902771"
      fy="492.63205"
      fx="159.35434"
@@ -146,47 +149,47 @@
      cx="159.35434"
      gradientTransform="matrix(1.0894779,-0.71513803,0.44645273,0.65626582,-244.93331,290.9185)"
      gradientUnits="userSpaceOnUse"
-     id="pip-radialGradient3073"
-     xlink:href="#pip-linearGradient3784-4-2"
+     id="suit-radialGradient3073"
+     xlink:href="#suit-linearGradient3784-4-2"
      /></defs>
 	<g
-   id="pip-Layer_x0020_1"
+   id="suit-Layer_x0020_1"
    style="fill-rule:nonzero;clip-rule:nonzero;stroke:#000000;stroke-miterlimit:4;">
 		<path
    style="fill:#FFFFFF;stroke-width:0.5;stroke:none"
    d="M166.8369141,235.5478516c0,3.7773438-3.0869141,6.8691406-6.8710938,6.8691406H7.1108398c-3.7749023,0-6.8608398-3.0917969-6.8608398-6.8691406V7.1201172C0.25,3.3427734,3.3359375,0.25,7.1108398,0.25h152.8549805    c3.7841797,0,6.8710938,3.0927734,6.8710938,6.8701172v228.4277344z"
-   id="pip-path5" />
+   id="suit-path5" />
 		<g
    style="stroke:none;"
-   id="pip-g7">
+   id="suit-g7">
 			<g
-   id="pip-g9">
+   id="suit-g9">
 				
 			</g>
 			
 		</g>
 		<g
-   id="pip-g15">
+   id="suit-g15">
 			
 		</g>
 		<g
-   id="pip-g19">
+   id="suit-g19">
 			
 		</g>
 		<g
    style="stroke:none;"
-   id="pip-g23">
+   id="suit-g23">
 			<g
-   id="pip-g25">
+   id="suit-g25">
 				
 			</g>
 			
 		</g>
 		<g
    style="stroke:none;"
-   id="pip-g31">
+   id="suit-g31">
 			<g
-   id="pip-g33">
+   id="suit-g33">
 				
 			</g>
 			
@@ -195,7 +198,7 @@
 
 
 
-<g id="pip-rank-index" style="fill:#df0000;stroke:none"><path id="pip-rank-index-top" d="M24.237 9.267Q24.237 10.183 24.084 10.919Q23.93 11.655 23.392 12.457Q22.854 13.258 22.346 13.88Q21.839 14.501 20.609 15.515Q18.764 17.086 16.734 18.64Q14.705 20.194 14.366 20.455L12.49 21.895H19.871Q21.993 21.895 22.884 20.913Q23.776 19.932 24.145 17.838H24.668L24.36 26.9H9.907V23.105L13.013 20.063Q16.181 16.988 17.503 14.583Q18.825 12.179 18.825 9.283Q18.825 6.388 18.241 5.325Q17.657 4.262 16.273 4.262Q14.889 4.262 14.335 5.014Q13.782 5.767 13.782 6.454Q13.782 7.141 13.966 7.664H14.889Q15.135 8.351 15.135 9.316Q15.135 10.281 14.366 10.984Q13.597 11.688 12.337 11.688Q11.076 11.688 10.384 10.821Q9.692 9.954 9.692 8.645Q9.692 6.454 11.476 5.047Q13.259 3.64 16.826 3.64Q20.394 3.64 22.315 5.047Q24.237 6.454 24.237 9.267Z" /><path id="pip-rank-index-bottom" d="M24.237 9.267Q24.237 10.183 24.084 10.919Q23.93 11.655 23.392 12.457Q22.854 13.258 22.346 13.88Q21.839 14.501 20.609 15.515Q18.764 17.086 16.734 18.64Q14.705 20.194 14.366 20.455L12.49 21.895H19.871Q21.993 21.895 22.884 20.913Q23.776 19.932 24.145 17.838H24.668L24.36 26.9H9.907V23.105L13.013 20.063Q16.181 16.988 17.503 14.583Q18.825 12.179 18.825 9.283Q18.825 6.388 18.241 5.325Q17.657 4.262 16.273 4.262Q14.889 4.262 14.335 5.014Q13.782 5.767 13.782 6.454Q13.782 7.141 13.966 7.664H14.889Q15.135 8.351 15.135 9.316Q15.135 10.281 14.366 10.984Q13.597 11.688 12.337 11.688Q11.076 11.688 10.384 10.821Q9.692 9.954 9.692 8.645Q9.692 6.454 11.476 5.047Q13.259 3.64 16.826 3.64Q20.394 3.64 22.315 5.047Q24.237 6.454 24.237 9.267Z" transform="rotate(180,83.54345705,121.3334961)" /></g>
+<g id="suit-rank-index" style="fill:#df0000;stroke:none"><path id="suit-rank-index-top" d="M24.237 9.267Q24.237 10.183 24.084 10.919Q23.93 11.655 23.392 12.457Q22.854 13.258 22.346 13.88Q21.839 14.501 20.609 15.515Q18.764 17.086 16.734 18.64Q14.705 20.194 14.366 20.455L12.49 21.895H19.871Q21.993 21.895 22.884 20.913Q23.776 19.932 24.145 17.838H24.668L24.36 26.9H9.907V23.105L13.013 20.063Q16.181 16.988 17.503 14.583Q18.825 12.179 18.825 9.283Q18.825 6.388 18.241 5.325Q17.657 4.262 16.273 4.262Q14.889 4.262 14.335 5.014Q13.782 5.767 13.782 6.454Q13.782 7.141 13.966 7.664H14.889Q15.135 8.351 15.135 9.316Q15.135 10.281 14.366 10.984Q13.597 11.688 12.337 11.688Q11.076 11.688 10.384 10.821Q9.692 9.954 9.692 8.645Q9.692 6.454 11.476 5.047Q13.259 3.64 16.826 3.64Q20.394 3.64 22.315 5.047Q24.237 6.454 24.237 9.267Z" /><path id="suit-rank-index-bottom" d="M24.237 9.267Q24.237 10.183 24.084 10.919Q23.93 11.655 23.392 12.457Q22.854 13.258 22.346 13.88Q21.839 14.501 20.609 15.515Q18.764 17.086 16.734 18.64Q14.705 20.194 14.366 20.455L12.49 21.895H19.871Q21.993 21.895 22.884 20.913Q23.776 19.932 24.145 17.838H24.668L24.36 26.9H9.907V23.105L13.013 20.063Q16.181 16.988 17.503 14.583Q18.825 12.179 18.825 9.283Q18.825 6.388 18.241 5.325Q17.657 4.262 16.273 4.262Q14.889 4.262 14.335 5.014Q13.782 5.767 13.782 6.454Q13.782 7.141 13.966 7.664H14.889Q15.135 8.351 15.135 9.316Q15.135 10.281 14.366 10.984Q13.597 11.688 12.337 11.688Q11.076 11.688 10.384 10.821Q9.692 9.954 9.692 8.645Q9.692 6.454 11.476 5.047Q13.259 3.64 16.826 3.64Q20.394 3.64 22.315 5.047Q24.237 6.454 24.237 9.267Z" transform="rotate(180,83.54345705,121.3334961)" /></g>
 
 
 
@@ -204,11 +207,11 @@
 
 <g
    transform="matrix(1.6743072,0,0,1.5669921,17.177511,46.385321)"
-   id="pip-layer1-9-6"
+   id="suit-layer1-9-6"
    style="fill:#df0000;fill-opacity:1"><path
      style="fill:#df0000;fill-opacity:1"
     
-     id="pip-hl-8"
+     id="suit-hl-8"
      d="M 3.676,-9 C 0.433,-9 0,-5.523 0,-5.523 0,-5.523 -0.433,-9 -3.676,-9 -5.946,-9 -8,-7.441 -8,-4.5 -8,-0.614 -1.4208493,3.2938141 0,9 1.35201,3.2985969 8,-0.614 8,-4.5 8,-7.441 5.946,-9 3.676,-9 z"
      /></g>
 
@@ -218,29 +221,30 @@
 
 <g
    transform="matrix(-1.6743072,0,0,-1.5669921,150.15601,195.14313)"
-   id="pip-layer1-9-6-5"
+   id="suit-layer1-9-6-5"
    style="fill:#df0000;fill-opacity:1"><path
      style="fill:#df0000;fill-opacity:1"
     
-     id="pip-hl-8-1"
+     id="suit-hl-8-1"
      d="M 3.676,-9 C 0.433,-9 0,-5.523 0,-5.523 0,-5.523 -0.433,-9 -3.676,-9 -5.946,-9 -8,-7.441 -8,-4.5 -8,-0.614 -1.4208493,3.2938141 0,9 1.35201,3.2985969 8,-0.614 8,-4.5 8,-7.441 5.946,-9 3.676,-9 z"
      /></g><g
    transform="matrix(2.7790082,0,0,2.600887,83.701068,56.859768)"
-   id="pip-layer1-9-6-8"
+   id="suit-layer1-9-6-8"
    style="fill:#df0000;fill-opacity:1"><path
      style="fill:#df0000;fill-opacity:1"
     
-     id="pip-hl-8-8"
+     id="suit-hl-8-8"
      d="M 3.676,-9 C 0.433,-9 0,-5.523 0,-5.523 0,-5.523 -0.433,-9 -3.676,-9 -5.946,-9 -8,-7.441 -8,-4.5 -8,-0.614 -1.4208493,3.2938141 0,9 1.35201,3.2985969 8,-0.614 8,-4.5 8,-7.441 5.946,-9 3.676,-9 z"
      /></g><g
    transform="matrix(-2.7790082,0,0,-2.600887,83.701068,185.26217)"
-   id="pip-layer1-9-6-8-9"
+   id="suit-layer1-9-6-8-9"
    style="fill:#df0000;fill-opacity:1"><path
      style="fill:#df0000;fill-opacity:1"
     
-     id="pip-hl-8-8-5"
+     id="suit-hl-8-8-5"
      d="M 3.676,-9 C 0.433,-9 0,-5.523 0,-5.523 0,-5.523 -0.433,-9 -3.676,-9 -5.946,-9 -8,-7.441 -8,-4.5 -8,-0.614 -1.4208493,3.2938141 0,9 1.35201,3.2985969 8,-0.614 8,-4.5 8,-7.441 5.946,-9 3.676,-9 z"
-     /></g></symbol><symbol id="art" viewBox="64.0 22.0 82.5 74.19"><defs id="art-defs41"><radialGradient xlink:href="#art-linearGradient3773" id="art-radialGradient3781" cx="-0.15782039" cy="-8.8345356" fx="-0.15782039" fy="-8.8345356" r="7.9997029" gradientTransform="matrix(-1.5842693,-0.02349808,0.03071979,-2.4775745,-0.24856378,-26.713507)" gradientUnits="userSpaceOnUse" /><linearGradient id="art-linearGradient3773"><stop style="stop-color:#000000;stop-opacity:1;" offset="0" id="art-stop3775" /><stop style="stop-color:#000000;stop-opacity:0.64885497;" offset="1" id="art-stop3777" /></linearGradient><radialGradient xlink:href="#art-linearGradient3773" id="art-radialGradient3957" cx="-0.15782039" cy="-8.8345356" fx="-0.15782039" fy="-8.8345356" r="7.9997029" gradientTransform="matrix(-1.5842693,-0.02349808,0.03071979,-2.4775745,-0.24856378,-26.713507)" gradientUnits="userSpaceOnUse" /><linearGradient id="art-linearGradient3959"><stop style="stop-color:#000000;stop-opacity:1;" offset="0" id="art-stop3961" /><stop style="stop-color:#000000;stop-opacity:0.64885497;" offset="1" id="art-stop3963" /></linearGradient><radialGradient r="81.902771" fy="509.47577" fx="168.02475" cy="509.47577" cx="168.02475" gradientTransform="matrix(1.2565605,-0.77740644,0.33663816,0.5361257,-221.20213,359.24256)" gradientUnits="userSpaceOnUse" id="art-radialGradient3975" xlink:href="#art-linearGradient3784-4" /><linearGradient id="art-linearGradient3784-4"><stop style="stop-color:#ffffff;stop-opacity:0.4351145;" offset="0" id="art-stop3786-8" /><stop style="stop-color:#000000;stop-opacity:0;" offset="1" id="art-stop3788-6" /></linearGradient><radialGradient xlink:href="#art-linearGradient3784-4-5" id="art-radialGradient3929" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1.2565605,-0.77740644,0.33663816,0.5361257,-221.20213,359.24256)" cx="168.02475" cy="509.47577" fx="168.02475" fy="509.47577" r="81.902771" /><linearGradient id="art-linearGradient3784-4-5"><stop style="stop-color:#ffffff;stop-opacity:0.48854962;" offset="0" id="art-stop3786-8-0" /><stop style="stop-color:#000000;stop-opacity:0;" offset="1" id="art-stop3788-6-3" /></linearGradient><radialGradient xlink:href="#art-linearGradient3784-4-1" id="art-radialGradient3927" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1.2565605,-0.77740644,0.33663816,0.5361257,-221.20213,359.24256)" cx="168.02475" cy="509.47577" fx="168.02475" fy="509.47577" r="81.902771" /><linearGradient id="art-linearGradient3784-4-1"><stop style="stop-color:#ffffff;stop-opacity:0.23664123;" offset="0" id="art-stop3786-8-03" /><stop style="stop-color:#000000;stop-opacity:0;" offset="1" id="art-stop3788-6-6" /></linearGradient><linearGradient id="art-linearGradient3768"><stop style="stop-color:#df0000;stop-opacity:1;" offset="0" id="art-stop3770" /><stop style="stop-color:#df0000;stop-opacity:0.67175573;" offset="1" id="art-stop3772" /></linearGradient><linearGradient id="art-linearGradient3784-4-6"><stop style="stop-color:#ffffff;stop-opacity:0.31297711;" offset="0" id="art-stop3786-8-8" /><stop style="stop-color:#000000;stop-opacity:0;" offset="1" id="art-stop3788-6-8" /></linearGradient><radialGradient r="81.902771" fy="492.63205" fx="159.35434" cy="492.63205" cx="159.35434" gradientTransform="matrix(1.0894779,-0.71513803,0.44645273,0.65626582,-244.93331,290.9185)" gradientUnits="userSpaceOnUse" id="art-radialGradient4013-8" xlink:href="#art-linearGradient3784-4-2" /><linearGradient id="art-linearGradient3784-4-2"><stop style="stop-color:#ffffff;stop-opacity:0.29007635;" offset="0" id="art-stop3786-8-1" /><stop style="stop-color:#000000;stop-opacity:0;" offset="1" id="art-stop3788-6-5" /></linearGradient></defs>
+     /></g></g></g>
+<g clip-path="url(#art-clip)"><g transform="matrix(1.80606,0,0,1.80606,-106.588,64.267)"><defs id="art-defs41"><radialGradient xlink:href="#art-linearGradient3773" id="art-radialGradient3781" cx="-0.15782039" cy="-8.8345356" fx="-0.15782039" fy="-8.8345356" r="7.9997029" gradientTransform="matrix(-1.5842693,-0.02349808,0.03071979,-2.4775745,-0.24856378,-26.713507)" gradientUnits="userSpaceOnUse" /><linearGradient id="art-linearGradient3773"><stop style="stop-color:#000000;stop-opacity:1;" offset="0" id="art-stop3775" /><stop style="stop-color:#000000;stop-opacity:0.64885497;" offset="1" id="art-stop3777" /></linearGradient><radialGradient xlink:href="#art-linearGradient3773" id="art-radialGradient3957" cx="-0.15782039" cy="-8.8345356" fx="-0.15782039" fy="-8.8345356" r="7.9997029" gradientTransform="matrix(-1.5842693,-0.02349808,0.03071979,-2.4775745,-0.24856378,-26.713507)" gradientUnits="userSpaceOnUse" /><linearGradient id="art-linearGradient3959"><stop style="stop-color:#000000;stop-opacity:1;" offset="0" id="art-stop3961" /><stop style="stop-color:#000000;stop-opacity:0.64885497;" offset="1" id="art-stop3963" /></linearGradient><radialGradient r="81.902771" fy="509.47577" fx="168.02475" cy="509.47577" cx="168.02475" gradientTransform="matrix(1.2565605,-0.77740644,0.33663816,0.5361257,-221.20213,359.24256)" gradientUnits="userSpaceOnUse" id="art-radialGradient3975" xlink:href="#art-linearGradient3784-4" /><linearGradient id="art-linearGradient3784-4"><stop style="stop-color:#ffffff;stop-opacity:0.4351145;" offset="0" id="art-stop3786-8" /><stop style="stop-color:#000000;stop-opacity:0;" offset="1" id="art-stop3788-6" /></linearGradient><radialGradient xlink:href="#art-linearGradient3784-4-5" id="art-radialGradient3929" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1.2565605,-0.77740644,0.33663816,0.5361257,-221.20213,359.24256)" cx="168.02475" cy="509.47577" fx="168.02475" fy="509.47577" r="81.902771" /><linearGradient id="art-linearGradient3784-4-5"><stop style="stop-color:#ffffff;stop-opacity:0.48854962;" offset="0" id="art-stop3786-8-0" /><stop style="stop-color:#000000;stop-opacity:0;" offset="1" id="art-stop3788-6-3" /></linearGradient><radialGradient xlink:href="#art-linearGradient3784-4-1" id="art-radialGradient3927" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1.2565605,-0.77740644,0.33663816,0.5361257,-221.20213,359.24256)" cx="168.02475" cy="509.47577" fx="168.02475" fy="509.47577" r="81.902771" /><linearGradient id="art-linearGradient3784-4-1"><stop style="stop-color:#ffffff;stop-opacity:0.23664123;" offset="0" id="art-stop3786-8-03" /><stop style="stop-color:#000000;stop-opacity:0;" offset="1" id="art-stop3788-6-6" /></linearGradient><linearGradient id="art-linearGradient3768"><stop style="stop-color:#df0000;stop-opacity:1;" offset="0" id="art-stop3770" /><stop style="stop-color:#df0000;stop-opacity:0.67175573;" offset="1" id="art-stop3772" /></linearGradient><linearGradient id="art-linearGradient3784-4-6"><stop style="stop-color:#ffffff;stop-opacity:0.31297711;" offset="0" id="art-stop3786-8-8" /><stop style="stop-color:#000000;stop-opacity:0;" offset="1" id="art-stop3788-6-8" /></linearGradient><radialGradient r="81.902771" fy="492.63205" fx="159.35434" cy="492.63205" cx="159.35434" gradientTransform="matrix(1.0894779,-0.71513803,0.44645273,0.65626582,-244.93331,290.9185)" gradientUnits="userSpaceOnUse" id="art-radialGradient4013-8" xlink:href="#art-linearGradient3784-4-2" /><linearGradient id="art-linearGradient3784-4-2"><stop style="stop-color:#ffffff;stop-opacity:0.29007635;" offset="0" id="art-stop3786-8-1" /><stop style="stop-color:#000000;stop-opacity:0;" offset="1" id="art-stop3788-6-5" /></linearGradient></defs>
 	<g id="art-Layer_x0020_1" style="fill-rule:nonzero;clip-rule:nonzero;stroke:#000000;stroke-miterlimit:4;">
 		<path style="fill:#FFFFFF;stroke-width:0.5;stroke:none" d="M166.8 235.5c0 3.8-3 6.9-6.8 6.9l-152.9 0c-3.8 0-6.9-3.1-6.9-6.9l0-228.4c0-3.8 3.1-6.9 6.9-6.9l152.9 0c3.8 0 6.8 3.1 6.8 6.9l0 228.4l0 0z" id="art-path5" />
 		<g style="stroke:none;" id="art-g7">
@@ -288,9 +292,5 @@
 
 
 
-<g transform="matrix(-2.28884,0,0,-2.1421364,123.93687,195.84044)" id="art-layer1-9-6-7" style="fill:#df0000;fill-opacity:1" /><g transform="matrix(-1.1121828,0,0,-1.0408972,156.03613,200.53531)" id="art-layer1-9-6-9-7" style="fill:#df0000;fill-opacity:1" /><g id="art-Layer_x0020_1-8" style="fill:none;stroke:#000000;stroke-width:1.82777798;stroke-miterlimit:4;stroke-dasharray:none" transform="matrix(0.73316112,0,0,0.81584336,22.32511,22.465901)"><path style="fill:none;stroke-width:1.82777798;stroke-miterlimit:4;stroke-dasharray:none;stroke:none" d="M166.8 235.5c0 3.8-3 6.9-6.8 6.9l-152.9 0c-3.8 0-6.9-3.1-6.9-6.9l0-228.4c0-3.8 3.1-6.9 6.9-6.9l152.9 0c3.8 0 6.8 3.1 6.8 6.9l0 228.4l0 0z" id="art-path5-8" /><g style="fill:none;stroke:none" id="art-g7-4"><g id="art-g9-3" style="fill:none" /></g><g id="art-g15-1" style="fill:none;stroke-width:1.82777798;stroke-miterlimit:4;stroke-dasharray:none" /><g id="art-g19-4" style="fill:none;stroke-width:1.82777798;stroke-miterlimit:4;stroke-dasharray:none" /><g style="fill:none;stroke:none" id="art-g23-9"><g id="art-g25-2" style="fill:none" /></g><g style="fill:none;stroke:none" id="art-g31-0"><g id="art-g33-6" style="fill:none" /></g></g></symbol><clipPath id="card"><rect width="167.0869141" height="242.6669922" rx="10"/></clipPath></defs>
-<rect width="167.0869141" height="242.6669922" rx="10" fill="#fff"/>
-<path fill="#df0000" d="M26.142857142857142 10.0H63.28571428571428V12.171428571428578H57.0V61.542857142857144Q57.0 76.97142857142858 50.028571428571425 84.0Q43.05714285714285 91.02857142857142 29.114285714285714 91.02857142857142Q19.857142857142854 91.02857142857142 14.428571428571427 87.4857142857143Q9.0 83.94285714285715 9.0 77.54285714285714Q9.0 72.62857142857143 11.742857142857144 69.82857142857142Q14.485714285714286 67.02857142857142 19.228571428571428 67.02857142857142Q23.97142857142857 67.02857142857142 26.314285714285713 69.42857142857142Q28.657142857142855 71.82857142857142 28.657142857142855 75.19999999999999Q28.657142857142855 78.57142857142857 27.4 82.0H22.942857142857143Q21.91428571428571 83.71428571428571 21.91428571428571 85.25714285714285Q21.91428571428571 86.8 23.457142857142856 87.88571428571429Q25.0 88.97142857142858 27.514285714285712 88.97142857142858Q32.08571428571429 88.97142857142858 33.4 85.37142857142857Q34.71428571428571 81.77142857142857 34.71428571428571 69.77142857142857V12.171428571428578H26.142857142857142Z"/>
-<use xlink:href="#pip" x="92.00" y="14.19" width="70.00" height="73.62"/>
-<use xlink:href="#art" x="9" y="104.00" width="149" height="134.00" clip-path="url(#card)"/>
+<g transform="matrix(-2.28884,0,0,-2.1421364,123.93687,195.84044)" id="art-layer1-9-6-7" style="fill:#df0000;fill-opacity:1" /><g transform="matrix(-1.1121828,0,0,-1.0408972,156.03613,200.53531)" id="art-layer1-9-6-9-7" style="fill:#df0000;fill-opacity:1" /><g id="art-Layer_x0020_1-8" style="fill:none;stroke:#000000;stroke-width:1.82777798;stroke-miterlimit:4;stroke-dasharray:none" transform="matrix(0.73316112,0,0,0.81584336,22.32511,22.465901)"><path style="fill:none;stroke-width:1.82777798;stroke-miterlimit:4;stroke-dasharray:none;stroke:none" d="M166.8 235.5c0 3.8-3 6.9-6.8 6.9l-152.9 0c-3.8 0-6.9-3.1-6.9-6.9l0-228.4c0-3.8 3.1-6.9 6.9-6.9l152.9 0c3.8 0 6.8 3.1 6.8 6.9l0 228.4l0 0z" id="art-path5-8" /><g style="fill:none;stroke:none" id="art-g7-4"><g id="art-g9-3" style="fill:none" /></g><g id="art-g15-1" style="fill:none;stroke-width:1.82777798;stroke-miterlimit:4;stroke-dasharray:none" /><g id="art-g19-4" style="fill:none;stroke-width:1.82777798;stroke-miterlimit:4;stroke-dasharray:none" /><g style="fill:none;stroke:none" id="art-g23-9"><g id="art-g25-2" style="fill:none" /></g><g style="fill:none;stroke:none" id="art-g31-0"><g id="art-g33-6" style="fill:none" /></g></g></g></g>
 </svg>

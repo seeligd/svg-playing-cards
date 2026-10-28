@@ -60,7 +60,10 @@ The cards are built from the main deck, so they share its artwork. A face
 card keeps only the parts of the art that show: shapes wholly outside the
 crop are left out and coordinates are rounded to a tenth of a unit, which
 takes a face card from about 600 KB to 150–230 KB without a visible
-change. Each deck is about 2.3 MB.
+change. Each deck is about 2.3 MB. The parts are placed with plain groups,
+transforms and clip paths rather than `<symbol>` and `<use>`, so Apple's
+CoreSVG (asset catalogs, `UIImage`, `NSImage`) draws them the same as a
+browser.
 
 ## Using the cards
 
