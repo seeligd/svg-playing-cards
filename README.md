@@ -68,7 +68,8 @@ Sizes, margins and per-rank limits are constants at the top of
 
 - **Card artwork:** Byron Knoll released Vector Playing Cards into the public
   domain ("attribution is appreciated but not required"). Thanks, Byron!
-- **Modifications and `tools/` scripts:** MIT. See [LICENSE](LICENSE).
+- **Modifications and `tools/` scripts:** MIT. See [LICENSE](LICENSE) and
+  [NOTICE](NOTICE).
 - **Abril Fatface** (by TypeTogether): SIL Open Font License 1.1. See
   [tools/fonts/OFL.txt](tools/fonts/OFL.txt). The main deck's rank outlines are
   derived from it.

@@ -1,0 +1,18 @@
+Third-party material
+====================
+
+This license covers the modifications in this repository and the scripts in
+tools/. It does not change the terms of the material it builds on:
+
+- Card artwork: "Vector Playing Cards" 1.3 by Byron Knoll
+  (https://code.google.com/archive/p/vector-playing-cards/), released into
+  the public domain. Attribution is appreciated but not required.
+
+- Abril Fatface (tools/fonts/AbrilFatface-Regular.ttf, and the rank glyph
+  outlines in the top-level card SVGs): Copyright (c) 2011 TypeTogether,
+  licensed under the SIL Open Font License 1.1 -- see tools/fonts/OFL.txt.
+
+- Arial (the rank glyph outlines in arial/*.svg): Arial is a trademark of
+  The Monotype Corporation and is not freely licensed. Those glyph outlines
+  are not covered by this license; check that your use of them is permitted
+  by your Arial license.
