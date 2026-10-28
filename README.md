@@ -30,7 +30,9 @@ Files are named `<rank>_of_<suit>.svg`, where rank is `ace`, `2`–`10`, `jack`,
 - The aces' large suit symbols are solid black or red, with no gradient shine.
 - Rank indices are vector outlines, not `<text>`, so they render the same
   everywhere without any font installed. They're top-aligned at the same
-  margin on every card and centred over the corner suit.
+  margin on every card and centred over the corner suit, but kept at least
+  3 units from the card's rounded edge (a corner radius of 7.11), so the K's
+  serif and the 10 don't crowd the corner.
   - A, 2–10 and J have a cap height of 22.9 units; K and Q have 20.6, the
     sizes the original deck used. The 10 is narrowed to fit beside its pips.
 - The queens' small corner suits are moved down slightly to clear the Q's tail.

@@ -20,6 +20,7 @@ import os
 import re
 import shutil
 
+from fontTools.pens.basePen import BasePen
 from fontTools.pens.boundsPen import BoundsPen
 from fontTools.pens.svgPathPen import SVGPathPen
 from fontTools.pens.transformPen import TransformPen
@@ -30,6 +31,11 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CARD_W, CARD_H = 167.0869141, 242.6669922
 MARGIN_TOP = 4.0
 MIN_LEFT = 1.5
+# Least distance from the rank's ink to the card's rounded edge, a rounded
+# rectangle of radius CORNER (where the apps draw the card's outline), so a
+# serif doesn't reach into the curve of the corner.
+CLEARANCE = 3.0
+CORNER = 7.11
 # Ranks that need more white space from the card edge.
 LEFT_LIMIT = {'Q': 2.75}
 # Cap height in card units (the original Arial sizes). K and Q are smaller so
@@ -75,8 +81,44 @@ def draw_run(glyphs, names, pen, left, sx, scale, cap_height, track):
         x += glyphs[name].width + track
 
 
+class PointsPen(BasePen):
+    """Collects points along the outline, curves sampled every few percent."""
+    def __init__(self, glyphs):
+        super().__init__(glyphs)
+        self.points = []
+
+    def _moveTo(self, p):
+        self.points.append(p)
+
+    def _lineTo(self, p):
+        self.points.append(p)
+
+    def _curveToOne(self, p1, p2, p3):
+        p0 = self._getCurrentPoint()
+        for i in range(1, 21):
+            t = i / 20
+            self.points.append(tuple((1 - t) ** 3 * a + 3 * (1 - t) ** 2 * t * b
+                                     + 3 * (1 - t) * t ** 2 * c + t ** 3 * d
+                                     for a, b, c, d in zip(p0, p1, p2, p3)))
+
+    def _qCurveToOne(self, p1, p2):
+        p0 = self._getCurrentPoint()
+        for i in range(1, 21):
+            t = i / 20
+            self.points.append(tuple((1 - t) ** 2 * a + 2 * (1 - t) * t * b + t ** 2 * c
+                                     for a, b, c in zip(p0, p1, p2)))
+
+
+def edge_distance(x, y):
+    """How far a point in the top-left of the card is from its rounded edge."""
+    if x < CORNER and y < CORNER:
+        return CORNER - ((CORNER - x) ** 2 + (CORNER - y) ** 2) ** 0.5
+    return min(x, y)
+
+
 def rank_path(font, cfg, label, center, left, right):
-    """SVG path data for label centred on center, ink kept within [left, right]."""
+    """SVG path data for label centred on center, ink kept within [left, right]
+    and CLEARANCE from the rounded edge."""
     glyphs = font.getGlyphSet()
     cmap = font.getBestCmap()
     cap_height = font['OS/2'].sCapHeight
@@ -85,14 +127,26 @@ def rank_path(font, cfg, label, center, left, right):
     track = cfg['track_10'] * cap_height / 700 if label == '10' else 0
     sx = scale * cfg['condense']
 
-    bp = BoundsPen(glyphs)
-    draw_run(glyphs, names, bp, 0, sx, scale, cap_height, track)
-    x0, _, x1, _ = bp.bounds
-    if x1 - x0 > right - left:
-        sx *= (right - left) / (x1 - x0)
-        x0, x1 = x0 * (right - left) / (x1 - x0), x1 * (right - left) / (x1 - x0)
-    width = x1 - x0
-    ink_left = min(max(center - width / 2, left), right - width)
+    while True:
+        bp = BoundsPen(glyphs)
+        draw_run(glyphs, names, bp, 0, sx, scale, cap_height, track)
+        x0, _, x1, _ = bp.bounds
+        if x1 - x0 > right - left:
+            sx *= (right - left) / (x1 - x0)
+            continue
+        width = x1 - x0
+        ink_left = min(max(center - width / 2, left), right - width)
+        # Move right, in hundredths, while any of the ink is too near the corner
+        pp = PointsPen(glyphs)
+        draw_run(glyphs, names, pp, -x0, sx, scale, cap_height, track)
+        def clear(at):
+            return min(edge_distance(x + at, y) for x, y in pp.points) >= CLEARANCE
+        while not clear(ink_left) and ink_left + width <= right:
+            ink_left += 0.01
+        if ink_left + width <= right:
+            break
+        # No room to the right: condense and try again
+        sx *= 0.99
 
     pen = SVGPathPen(glyphs, ntos=lambda v: ('%.3f' % v).rstrip('0').rstrip('.'))
     draw_run(glyphs, names, pen, ink_left - x0, sx, scale, cap_height, track)
