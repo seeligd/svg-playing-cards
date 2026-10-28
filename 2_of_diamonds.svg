@@ -209,7 +209,7 @@
    id="Layer_x0020_1"
    style="fill-rule:nonzero;clip-rule:nonzero;stroke:#000000;stroke-miterlimit:4;">
 		<path
-   style="fill:#FFFFFF;stroke-width:0.5;"
+   style="fill:#FFFFFF;stroke-width:0.5;stroke:none"
    d="M166.8369141,235.5478516c0,3.7773438-3.0869141,6.8691406-6.8710938,6.8691406H7.1108398c-3.7749023,0-6.8608398-3.0917969-6.8608398-6.8691406V7.1201172C0.25,3.3427734,3.3359375,0.25,7.1108398,0.25h152.8549805    c3.7841797,0,6.8710938,3.0927734,6.8710938,6.8701172v228.4277344z"
    id="path5" />
 		<g
@@ -251,37 +251,14 @@
 
 
 
-<text
-   xml:space="preserve"
-   style="font-size:32px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#df0000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
-   x="7.8456664"
-   y="26.413288"
-   id="text3788"
-   sodipodi:linespacing="125%"><tspan
-     sodipodi:role="line"
-     id="tspan3790"
-     x="7.8456664"
-     y="26.413288"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#df0000;fill-opacity:1;font-family:Arial;-inkscape-font-specification:Arial">2</tspan></text>
+<g id="rank-index" style="fill:#df0000;stroke:none"><path id="rank-index-top" d="M15.382 8.122Q15.382 8.838 15.262 9.414Q15.142 9.99 14.721 10.618Q14.299 11.245 13.902 11.731Q13.505 12.218 12.543 13.011Q11.099 14.24 9.511 15.456Q7.922 16.672 7.658 16.877L6.19 18.003H11.965Q13.626 18.003 14.323 17.235Q15.021 16.467 15.31 14.829H15.719L15.479 21.92H4.168V18.95L6.599 16.57Q9.078 14.163 10.112 12.282Q11.147 10.4 11.147 8.134Q11.147 5.869 10.69 5.037Q10.233 4.205 9.15 4.205Q8.067 4.205 7.634 4.794Q7.201 5.382 7.201 5.92Q7.201 6.458 7.345 6.867H8.067Q8.259 7.405 8.259 8.16Q8.259 8.915 7.658 9.466Q7.056 10.016 6.07 10.016Q5.083 10.016 4.541 9.338Q4 8.659 4 7.635Q4 5.92 5.396 4.819Q6.791 3.718 9.583 3.718Q12.374 3.718 13.878 4.819Q15.382 5.92 15.382 8.122Z" /><path id="rank-index-bottom" d="M15.382 8.122Q15.382 8.838 15.262 9.414Q15.142 9.99 14.721 10.618Q14.299 11.245 13.902 11.731Q13.505 12.218 12.543 13.011Q11.099 14.24 9.511 15.456Q7.922 16.672 7.658 16.877L6.19 18.003H11.965Q13.626 18.003 14.323 17.235Q15.021 16.467 15.31 14.829H15.719L15.479 21.92H4.168V18.95L6.599 16.57Q9.078 14.163 10.112 12.282Q11.147 10.4 11.147 8.134Q11.147 5.869 10.69 5.037Q10.233 4.205 9.15 4.205Q8.067 4.205 7.634 4.794Q7.201 5.382 7.201 5.92Q7.201 6.458 7.345 6.867H8.067Q8.259 7.405 8.259 8.16Q8.259 8.915 7.658 9.466Q7.056 10.016 6.07 10.016Q5.083 10.016 4.541 9.338Q4 8.659 4 7.635Q4 5.92 5.396 4.819Q6.791 3.718 9.583 3.718Q12.374 3.718 13.878 4.819Q15.382 5.92 15.382 8.122Z" transform="rotate(180,83.54345705,121.3334961)" /></g>
 
 
 
 
 
 
-<text
-   xml:space="preserve"
-   style="font-size:32px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#df0000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
-   x="-159.48785"
-   y="-216.71518"
-   id="text3788-4"
-   sodipodi:linespacing="125%"
-   transform="scale(-1,-1)"><tspan
-     sodipodi:role="line"
-     id="tspan3790-3"
-     x="-159.48785"
-     y="-216.71518"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#df0000;fill-opacity:1;font-family:Arial;-inkscape-font-specification:Arial">2</tspan></text>
+
 
 
 

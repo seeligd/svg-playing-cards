@@ -195,7 +195,7 @@
    id="Layer_x0020_1"
    style="fill-rule:nonzero;clip-rule:nonzero;stroke:#000000;stroke-miterlimit:4;">
 		<path
-   style="fill:#FFFFFF;stroke-width:0.5;"
+   style="fill:#FFFFFF;stroke-width:0.5;stroke:none"
    d="M166.8369141,235.5478516c0,3.7773438-3.0869141,6.8691406-6.8710938,6.8691406H7.1108398c-3.7749023,0-6.8608398-3.0917969-6.8608398-6.8691406V7.1201172C0.25,3.3427734,3.3359375,0.25,7.1108398,0.25h152.8549805    c3.7841797,0,6.8710938,3.0927734,6.8710938,6.8701172v228.4277344z"
    id="path5" />
 		<g
@@ -237,18 +237,7 @@
 
 
 
-<text
-   xml:space="preserve"
-   style="font-size:32px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#df0000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
-   x="8.775425"
-   y="28.013288"
-   id="text3788"
-   sodipodi:linespacing="125%"><tspan
-     sodipodi:role="line"
-     id="tspan3790"
-     x="8.775425"
-     y="28.013288"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#df0000;fill-opacity:1;font-family:Arial;-inkscape-font-specification:Arial">5</tspan></text>
+<g id="rank-index" style="fill:#df0000;stroke:none"><path id="rank-index-top" d="M5.781 12.653 5.372 12.448V4.282L5.757 3.974Q7.225 4.205 10.209 4.525Q13.192 4.845 13.662 4.845Q14.131 4.845 14.335 4.602Q14.54 4.358 14.684 3.77L15.045 3.821Q14.684 7.738 14.107 8.48Q13.794 8.864 13.313 8.864Q12.831 8.864 11.291 8.429L6.045 6.97L5.925 11.936Q7.682 10.938 9.559 10.938Q11.436 10.938 12.687 11.386Q13.938 11.834 14.612 12.627Q15.888 14.138 15.888 16.288Q15.888 19.027 14.047 20.602Q12.206 22.176 8.981 22.176Q7.249 22.176 5.781 21.408Q4.987 20.973 4.493 20.166Q4 19.36 4 18.298Q4 17.235 4.566 16.544Q5.131 15.853 6.13 15.853Q7.128 15.853 7.694 16.378Q8.259 16.902 8.259 17.734Q8.259 18.566 8.043 19.155H7.249Q7.104 19.565 7.104 20.115Q7.104 20.666 7.513 21.165Q7.922 21.664 8.717 21.664Q9.511 21.664 9.92 21.395Q10.329 21.126 10.545 20.742Q10.762 20.358 10.882 19.539Q11.027 18.362 11.027 15.93Q11.027 13.498 10.63 12.525Q10.233 11.552 8.837 11.552Q7.441 11.552 5.781 12.653Z" /><path id="rank-index-bottom" d="M5.781 12.653 5.372 12.448V4.282L5.757 3.974Q7.225 4.205 10.209 4.525Q13.192 4.845 13.662 4.845Q14.131 4.845 14.335 4.602Q14.54 4.358 14.684 3.77L15.045 3.821Q14.684 7.738 14.107 8.48Q13.794 8.864 13.313 8.864Q12.831 8.864 11.291 8.429L6.045 6.97L5.925 11.936Q7.682 10.938 9.559 10.938Q11.436 10.938 12.687 11.386Q13.938 11.834 14.612 12.627Q15.888 14.138 15.888 16.288Q15.888 19.027 14.047 20.602Q12.206 22.176 8.981 22.176Q7.249 22.176 5.781 21.408Q4.987 20.973 4.493 20.166Q4 19.36 4 18.298Q4 17.235 4.566 16.544Q5.131 15.853 6.13 15.853Q7.128 15.853 7.694 16.378Q8.259 16.902 8.259 17.734Q8.259 18.566 8.043 19.155H7.249Q7.104 19.565 7.104 20.115Q7.104 20.666 7.513 21.165Q7.922 21.664 8.717 21.664Q9.511 21.664 9.92 21.395Q10.329 21.126 10.545 20.742Q10.762 20.358 10.882 19.539Q11.027 18.362 11.027 15.93Q11.027 13.498 10.63 12.525Q10.233 11.552 8.837 11.552Q7.441 11.552 5.781 12.653Z" transform="rotate(180,83.54345705,121.3334961)" /></g>
 
 
 
@@ -265,19 +254,7 @@
      inkscape:connector-curvature="0"
      id="hl-8"
      d="M 3.676,-9 C 0.433,-9 0,-5.523 0,-5.523 0,-5.523 -0.433,-9 -3.676,-9 -5.946,-9 -8,-7.441 -8,-4.5 -8,-0.614 -1.4208493,3.2938141 0,9 1.35201,3.2985969 8,-0.614 8,-4.5 8,-7.441 5.946,-9 3.676,-9 z"
-     sodipodi:nodetypes="scsscss" /></g><text
-   xml:space="preserve"
-   style="font-size:32px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#df0000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
-   x="-158.81761"
-   y="-213.51517"
-   id="text3788-4"
-   sodipodi:linespacing="125%"
-   transform="scale(-1,-1)"><tspan
-     sodipodi:role="line"
-     id="tspan3790-3"
-     x="-158.81761"
-     y="-213.51517"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#df0000;fill-opacity:1;font-family:Arial;-inkscape-font-specification:Arial">5</tspan></text>
+     sodipodi:nodetypes="scsscss" /></g>
 
 
 

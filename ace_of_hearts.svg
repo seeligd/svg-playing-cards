@@ -215,7 +215,7 @@
    id="Layer_x0020_1"
    style="fill-rule:nonzero;clip-rule:nonzero;stroke:#000000;stroke-miterlimit:4;">
 		<path
-   style="fill:#FFFFFF;stroke-width:0.5;"
+   style="fill:#FFFFFF;stroke-width:0.5;stroke:none"
    d="M166.8369141,235.5478516c0,3.7773438-3.0869141,6.8691406-6.8710938,6.8691406H7.1108398c-3.7749023,0-6.8608398-3.0917969-6.8608398-6.8691406V7.1201172C0.25,3.3427734,3.3359375,0.25,7.1108398,0.25h152.8549805    c3.7841797,0,6.8710938,3.0927734,6.8710938,6.8701172v228.4277344z"
    id="path5" />
 		<g
@@ -257,18 +257,7 @@
 
 
 
-<text
-   xml:space="preserve"
-   style="font-size:32px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#df0000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
-   x="6.2456665"
-   y="28.013288"
-   id="text3788"
-   sodipodi:linespacing="125%"><tspan
-     sodipodi:role="line"
-     id="tspan3790"
-     x="6.2456665"
-     y="28.013288"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;fill:#df0000;fill-opacity:1">A</tspan></text>
+<g id="rank-index" style="fill:#df0000;stroke:none"><path id="rank-index-top" d="M14.251 21.434 12.495 15.904H7.73L5.877 21.434H7.682V21.92H4V21.434H5.131L11.267 3.846H13.241L19.305 21.434H20.412V21.92H12.543V21.434ZM10.209 8.634 7.946 15.341H12.302Z" /><path id="rank-index-bottom" d="M14.251 21.434 12.495 15.904H7.73L5.877 21.434H7.682V21.92H4V21.434H5.131L11.267 3.846H13.241L19.305 21.434H20.412V21.92H12.543V21.434ZM10.209 8.634 7.946 15.341H12.302Z" transform="rotate(180,83.54345705,121.3334961)" /></g>
 
 <g
    transform="matrix(0.19686979,0,0,0.19686979,11.54991,16.869674)"
@@ -280,19 +269,19 @@
        d="M 3.676,-9 C 0.433,-9 0,-5.523 0,-5.523 0,-5.523 -0.433,-9 -3.676,-9 -5.946,-9 -8,-7.441 -8,-4.5 -8,-0.614 -1.4208493,3.2938141 0,9 1.35201,3.2985969 8,-0.614 8,-4.5 8,-7.441 5.946,-9 3.676,-9 z"
        id="hl"
        inkscape:connector-curvature="0"
-       style="fill:url(#radialGradient3776);fill-opacity:1;stroke:none" /></g><path
+       style="fill:#df0000;fill-opacity:1;stroke:none" /></g><path
      transform="matrix(1.484247,0,0,1.537104,-80.688965,-450.59362)"
      sodipodi:nodetypes="cscsc"
      inkscape:connector-curvature="0"
      id="path3762-6-4"
      d="m 117.3013,604.26609 c 0,0 -8.06755,-94.94997 22.85715,-122.85714 34.76052,-31.36871 140,-11.42857 140,-11.42857 0,0 -71.5404,24.83762 -100,48.57143 -27.21033,22.69199 -62.85715,85.71428 -62.85715,85.71428 z"
-     style="fill:url(#radialGradient4013);fill-opacity:1;stroke:none;filter:url(#filter3834-6)" /><path
+     style="fill:url(#radialGradient4013);fill-opacity:1;stroke:none;filter:url(#filter3834-6);display:none" /><path
      transform="matrix(1.153293,0.33782551,-0.32928251,1.4016433,422.93775,-451.90481)"
      sodipodi:nodetypes="cscsc"
      inkscape:connector-curvature="0"
      id="path3762-6-2-3"
      d="m 117.3013,604.26609 c 0,0 -8.06755,-94.94997 22.85715,-122.85714 34.76052,-31.36871 140,-11.42857 140,-11.42857 0,0 -63.09295,37.07057 -91.55255,60.80438 -27.21033,22.69199 -71.3046,73.48133 -71.3046,73.48133 z"
-     style="fill:url(#radialGradient3073);fill-opacity:1;stroke:none;filter:url(#filter3834-6-3)" /></g><g
+     style="fill:url(#radialGradient3073);fill-opacity:1;stroke:none;filter:url(#filter3834-6-3);display:none" /></g><g
    transform="matrix(1.6743072,0,0,1.5669921,17.177511,46.385321)"
    id="layer1-9-6"
    style="fill:#df0000;fill-opacity:1"><path
@@ -300,19 +289,7 @@
      inkscape:connector-curvature="0"
      id="hl-8"
      d="M 3.676,-9 C 0.433,-9 0,-5.523 0,-5.523 0,-5.523 -0.433,-9 -3.676,-9 -5.946,-9 -8,-7.441 -8,-4.5 -8,-0.614 -1.4208493,3.2938141 0,9 1.35201,3.2985969 8,-0.614 8,-4.5 8,-7.441 5.946,-9 3.676,-9 z"
-     sodipodi:nodetypes="scsscss" /></g><text
-   xml:space="preserve"
-   style="font-size:32px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#df0000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
-   x="-161.08786"
-   y="-213.51517"
-   id="text3788-4"
-   sodipodi:linespacing="125%"
-   transform="scale(-1,-1)"><tspan
-     sodipodi:role="line"
-     id="tspan3790-3"
-     x="-161.08786"
-     y="-213.51517"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#df0000;fill-opacity:1;font-family:Arial;-inkscape-font-specification:Arial">A</tspan></text>
+     sodipodi:nodetypes="scsscss" /></g>
 <g
    transform="matrix(-1.6743072,0,0,-1.5669921,150.15601,195.14313)"
    id="layer1-9-6-5"
