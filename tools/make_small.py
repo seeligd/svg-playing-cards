@@ -18,6 +18,7 @@ Safe to re-run.
 Usage:
   python3 tools/make_small.py                       # Abril Fatface, into small/
   python3 tools/make_small.py --font arial --out arial/small
+  python3 tools/make_small.py --font roboto --out roboto/small
 """
 import argparse
 import math
@@ -43,6 +44,7 @@ LABEL = {'ace': 'A', 'jack': 'J', 'queen': 'Q', 'king': 'K'}
 FONTS = {
     'abril': os.path.join(ROOT, 'tools', 'fonts', 'AbrilFatface-Regular.ttf'),
     'arial': '/System/Library/Fonts/Supplemental/Arial.ttf',
+    'roboto': os.path.join(ROOT, 'tools', 'fonts', 'Roboto-Regular.ttf'),
 }
 
 # The rank: top-left, its cap height a third of the card, squeezed to fit beside the suit

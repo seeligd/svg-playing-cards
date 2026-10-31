@@ -13,6 +13,7 @@ Usage:
   python3 tools/set_ranks.py                    # Abril Fatface, cards in repo root
   python3 tools/set_ranks.py --font arial --out arial
                                                 # copy all cards to arial/ first
+  python3 tools/set_ranks.py --font roboto --out roboto
 """
 import argparse
 import glob
@@ -63,6 +64,10 @@ FONTS = {
     # Its digits are tabular, so "10" is tightened before any condensing.
     'arial': dict(path='/System/Library/Fonts/Supplemental/Arial.ttf',
                   condense=1.0, track_10=-150),
+    # Roboto (SIL Open Font License) is close to Arial and set the same way, for
+    # where Arial can't be used, such as Android
+    'roboto': dict(path=os.path.join(ROOT, 'tools', 'fonts', 'Roboto-Regular.ttf'),
+                   condense=1.0, track_10=-150),
 }
 
 RANKS = {'ace': 'A', 'jack': 'J', 'queen': 'Q', 'king': 'K'}

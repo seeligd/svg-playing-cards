@@ -12,6 +12,10 @@ tools/. It does not change the terms of the material it builds on:
   outlines in the top-level card SVGs): Copyright (c) 2011 TypeTogether,
   licensed under the SIL Open Font License 1.1 -- see tools/fonts/OFL.txt.
 
+- Roboto (tools/fonts/Roboto-Regular.ttf, and the rank glyph outlines in
+  roboto/): Copyright 2011 The Roboto Project Authors, licensed under the SIL
+  Open Font License 1.1 -- see tools/fonts/Roboto-OFL.txt.
+
 - Arial (the rank glyph outlines in arial/*.svg): Arial is a trademark of
   The Monotype Corporation and is not freely licensed. Those glyph outlines
   are not covered by this license; check that your use of them is permitted

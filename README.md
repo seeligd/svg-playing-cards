@@ -12,8 +12,9 @@ restyled for use in games and apps.
 |---|---|
 | `*.svg` | The main deck, with ranks in **Abril Fatface** |
 | `arial/*.svg` | The same deck with ranks in **Arial** (see [Licensing](#licensing)) |
-| `small/*.svg`, `arial/small/*.svg` | The [small-size deck](#small-size-deck) in each font, for cards shown small |
-| `all_cards.png`, `arial/all_cards.png`, `small/all_cards.png`, `arial/small/all_cards.png` | Contact sheets of each deck |
+| `roboto/*.svg` | The same deck with ranks in **Roboto**, close to Arial and freely licensed |
+| `small/*.svg`, `arial/small/*.svg`, `roboto/small/*.svg` | The [small-size deck](#small-size-deck) in each font, for cards shown small |
+| `all_cards.png`, `arial/all_cards.png`, `roboto/all_cards.png`, and `all_cards.png` in each `small/` | Contact sheets of each deck |
 | `all_cards_baseline.png` | The deck before the rank font change, for comparison |
 | `tools/` | Scripts that generate the ranks, the small-size deck and the contact sheets |
 
@@ -89,10 +90,14 @@ python3 tools/set_ranks.py                          # main deck (Abril Fatface)
 python3 tools/set_ranks.py --font arial --out arial # Arial deck (macOS)
 python3 tools/make_small.py                         # small-size deck (Abril Fatface)
 python3 tools/make_small.py --font arial --out arial/small
+python3 tools/set_ranks.py --font roboto --out roboto
+python3 tools/make_small.py --font roboto --out roboto/small
 tools/render_all.sh                                 # all_cards.png (needs Google Chrome)
 tools/render_all.sh arial/all_cards.png arial
 tools/render_all.sh small/all_cards.png small
 tools/render_all.sh arial/small/all_cards.png arial/small
+tools/render_all.sh roboto/all_cards.png roboto
+tools/render_all.sh roboto/small/all_cards.png roboto/small
 ```
 
 Sizes, margins and per-rank limits are constants at the top of
@@ -109,7 +114,10 @@ it takes its artwork from the main deck.
 - **Abril Fatface** (by TypeTogether): SIL Open Font License 1.1. See
   [tools/fonts/OFL.txt](tools/fonts/OFL.txt). The main deck's rank outlines are
   derived from it.
+- **Roboto** (by Google): SIL Open Font License 1.1. See
+  [tools/fonts/Roboto-OFL.txt](tools/fonts/Roboto-OFL.txt). The rank outlines
+  in `roboto/` are derived from it.
 - **Arial:** the rank outlines in `arial/` are derived from Arial, a
   commercial Monotype font. They aren't covered by the MIT license or the
-  public-domain dedication. If that's a concern for your project, use the main
-  (Abril) deck.
+  public-domain dedication. If that's a concern for your project, use the
+  Roboto deck, which looks much like it, or the main (Abril) deck.
